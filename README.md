@@ -2,7 +2,6 @@
 Machine learning models used to predict if the credit card application should be approved or not.
 1. Introduction
 Small businesses and giant corporations are having difficulty surviving in the current economic recession. A sophisticated risk control can help reduce unnecessary cost and avoid unwanted situations. Credit score check is one of the risk control methods in the financial industry and banks. They examine personal information and data from credit card applicants to predict the probability of debts occurring. Credit score checking is crucial for the bank to decide whether to issue a credit card to the applicant.
-
 The goal of this project is to build a prediction model that can determine the credit approval rate from each customer. We will use XGboost, logistic regression, and decision tree algorithms to answer our research question. Our dataset contains a lot of personal information and attributes about applicants, which will be used to build our models. Additionally, we will investigate the most influential factor in determining "good" clients and "bad" clients.
 
 2. Exploratory Data Analysis
@@ -10,13 +9,13 @@ The dataset used in this project is from Kaggle website called "Credit Card Appr
 
 2.1 Analysis Description
 In this part, several analyses have been implemented through the goal of creating a model-ready dataset. During EDA, the following tasks were carried out:
-
 Analysis of the structure of the dataset
 Outliers' detection and solution
 NA and duplicate value analysis and solution
 Feature analysis, synthesis, and transformation
 Encode categorical variables
 Correlation analysis
+
 2.2 Data Extraction
 The dataset was downloaded from the Kaggle website using the "open datasets" package in Python. This package allows direct downloading of datasets from a given website (Kaggle in this case) by inputting the username and the corresponding key.
 
@@ -38,11 +37,11 @@ A dependent variable was created to identify the clients based on their credit s
 
 2.3.6 Feature Engineering
 Several new features were created based on the existing variables to provide more information for the prediction model. These new features included:
-
 'INCOME_PER_CHILD': Calculated as the ratio of the customer's income to the number of children they have.
 'CREDIT_INCOME_PERCENT': Calculated as the ratio of the credit amount to the customer's income.
 'ANNUITY_INCOME_PERCENT': Calculated as the ratio of the loan annuity to the customer's income.
 'EMPLOYMENT_LENGTH': Categorized the length of employment into several groups.
+
 2.3.7 Encode Categorical Variables
 Categorical variables in the dataset were encoded using one-hot encoding to convert them into numerical format for the machine learning models. This process expanded the categorical variables into multiple binary columns.
 
